@@ -18,15 +18,17 @@ This project demonstrates how to validate SQL database operations (CRUD) in a st
 
 🗂 2. Folder Structure
 
-DatabaseSpecflowFramework/
-├── Features/            # .feature files for CRUD scenarios
-├── StepDefinitions/     # SpecFlow step implementation
-├── DatabaseManager/
-│   ├── Models/          # User POCO
-│   └── Repositories/    # UserRepository: all DB logic
-├── Hooks/               # Setup/Cleanup logic using BeforeScenario/AfterScenario
-├── App.config           # Connection string to SQL DB
-└── DatabaseSpecflowFramework.csproj
+DatabaseManager/
+├── Config/ # App.config and DB configuration files
+├── Features/ # Gherkin .feature files (BDD test cases)
+├── Helpers/ # Utility classes, .resx readers, validation helpers
+├── Hooks/ # BeforeScenario/AfterScenario hooks for setup and cleanup
+├── Interfaces/ # IRepository interfaces for DB abstraction
+├── Models/ # POCO classes representing database entities (e.g., User.cs)
+├── Repositories/ # Repository classes handling DB logic (Insert, Get, Update, Delete)
+├── Steps/ # StepDefinitions implementing feature scenarios
+└── README.md # This file
+
 ⚙️ 3. Configuration
 🔗 App.config
 Add your SQL Server connection string inside App.config:
