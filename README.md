@@ -1,4 +1,5 @@
-🧪 DatabaseManager
+🧪 #DatabaseManager
+
 Professional C# + SpecFlow + MSTest Database Automation Framework (.NET 8)
 This project demonstrates how to validate SQL database operations (CRUD) in a structured and maintainable test automation framework using SpecFlow.
 
